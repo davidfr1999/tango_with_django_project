@@ -129,3 +129,7 @@ STATIC_URL = '/static/'
 # Media files
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
+
+#Login
+
+LOGIN_URL = 'rango:login'
