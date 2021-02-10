@@ -86,4 +86,3 @@ def add_page(request, category_name_slug):
     return render(request, 'rango/add_page.html', context=context_dict)
 
 
-    return render(request, 'rango/add_page.html', {'form': form})

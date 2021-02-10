@@ -1,31 +1,25 @@
-<!DOCTYPE html>
-
+{% extends 'rango/base.html' %}
 {% load staticfiles %}
-<html>
 
-	<head>
-		<title>Rango</title>
-	</head>
 
-	<body>
+	{% block title_block %}
+		About Rango
+	{% endblock %}
+
+		{% block body_block %}
 		<h1>Rango says...</h1>
 		<div>
 			here is the about page. <br />
 			<strong>This tutorial has been put together by David.</strong>
 		</div>
-
-		<a href="/rango/">Index</a>
-
         <div>
-			<a href="/rango/about/">About</a><br />
 			<img src="{% static 'images/chameleon.jfif' %}"
 				 alt="Picture of a chameleon" />
 		</div>
-
         <div>
             <img src="{{ MEDIA_URL }}cat.jpg"
                  alt="Picture of a Cat" />
         </div>
+		{% endblock %}
 
-    </body>
-</html>
+
